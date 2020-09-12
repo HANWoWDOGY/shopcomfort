@@ -1,0 +1,99 @@
+.navbar-menu
+  margin-right: 20px
+.catalog-text
+  font-size: 1.4rem
+  text-align: center
+  background-color: $primary
+  padding: 5px 60px
+.nav-catalog__item
+  text-transform: uppercase
+  list-style-type: none
+  &-link
+    display: inline-block
+    text-decoration: none
+    border-bottom: 1px dotted #cccccc
+    color: $dark
+    padding: 7px 0
+    width: 100%
+    &:hover
+      cursor: pointer
+      color: $primary
+.navbar-nav
+  padding-inline-start: 10px !important
+.search
+  position: relative
+  width: 100%
+  margin: 0 auto
+  &__input
+    width: 100%
+    height: 42px
+    padding-left: 10px
+    border: 2px solid $primary
+    border-radius: 5px
+    outline: none
+    background: #F9F0DA
+    color: $dark
+  &__button
+    position: absolute
+    top: 0
+    right: 0px
+    width: 42px
+    height: 42px
+    border: none
+    background: $primary
+    border-radius: 0 5px 5px 0
+    cursor: pointer
+    &::before
+      content: "\f002"
+      font-family: FontAwesome
+      font-size: 16px
+      color: #F9F0DA
+.hero
+  &-main
+    &__dis
+      text-align: center
+      font-size: 1.5rem
+.product-item
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  width: 230px
+  text-align: center
+  margin: 0 auto
+  border-bottom: 2px solid #F5F5F5
+  font-family: "Open Sans"
+  transition: .3s ease-in
+  &:hover
+    border-bottom: 2px solid $primary
+.product-item
+  &__img
+    display: block
+    width: 100%
+.product-list 
+  background: #fafafa
+  padding: 15px 0
+.product-list
+  &__title
+    font-size: 18px
+    font-weight: 400
+    color: #444444
+    margin: 0 0 10px 0
+.price 
+  font-size: 16px
+  color: $primary
+  display: block
+  margin-bottom: 12px
+.button__price 
+  text-decoration: none
+  display: inline-block
+  padding: 0 12px
+  background: $primary
+  color: white
+  text-transform: uppercase
+  font-size: 12px
+  line-height: 28px
+  transition: .3s ease-in
+.product-item, .button__price
+  &:hover
+    background: $primary
+  

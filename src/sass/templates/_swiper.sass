@@ -1,0 +1,25 @@
+.swiper
+  &-container 
+    width: 100%
+    height: 100%
+.swiper
+  &-slide 
+    text-align: center
+    font-size: 18px
+    display: flex
+    align-items: center
+    justify-content: center
+  &-button
+    &-prev, &-next
+      background-size: 42px
+      width: 42px
+      height: 36px
+      &::after
+        display: none
+    &-prev
+      background: url("../img/arrow-next.png") no-repeat center
+      transform: rotate(-180deg)
+    &-next
+      background: url("../img/arrow-next.png") no-repeat center
+.swiper-container-horizontal>.swiper-pagination-bullets
+  width: auto   
