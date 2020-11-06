@@ -2,38 +2,40 @@
   width: 100%
   background-color: $dark
   padding: 24px 0 24px
-  margin-bottom: 0.8rem
-  &__promo
-    text-align: center
-    font-size: 1.7rem
-    color: $light
-    &-text
-      &:hover
-        color: $primary
-        transition: color 0.2s
 .menu
+  position: relative
   display: flex
   justify-content: space-between
   align-items: center
+  margin-left: 5rem
+  margin-right: 5rem
 .logo
-  color: $primary
-  font-size: 1.075rem
-  text-transform: uppercase
-  text-decoration: none
+  display: flex
+  &__link
+    text-decoration: none
+    color: #dddddd
+    font-size: 1.3rem
+    margin-left: 1.57rem
+  &--big
+    color: $light
+    display: block
+    font-size: 2.9rem
+  &__image
+    width: 66px
+    height: 66px
 .nav
+  &--hidden
+    display: none
   &__item
     text-decoration: none
-    color: $light
-    text-transform: uppercase
-    margin-right: 2.5rem
+    color: #dddddd
+    font-size: 1.3rem
+    padding-bottom: 1rem
+    transition: all 0.2s ease-in
+    border-bottom: 1px solid transparent
     &:hover
       color: $primary
-      transition: color 0.2s
-.phone
-  color: $primary
-.contacts
-  &__phone
-    margin-right: 45px
-    &:hover 
-      color: $light
+      border-bottom: 1px solid $primary
+  &__item:not(:last-child)
+    margin-right: 3.5rem
 
