@@ -1,0 +1,105 @@
+.bath
+  &__title
+    font-weight: normal
+    position: relative
+    display: table
+    width: auto
+    margin: 15px auto
+    color: $light
+    font-size: 1.7rem
+    letter-spacing: 2px
+    margin-top: 8rem
+    margin-bottom: 4rem
+    &::before
+      content: ""
+      position: absolute
+      top: -50%
+      left: -25px
+      width: 30px
+      height: 20px
+      border-top: 2px solid $light
+      border-left: 2px solid $light
+    &::after
+      content: ""
+      position: absolute
+      bottom: -50%
+      right: -25px
+      width: 30px
+      height: 20px
+      border-bottom: 2px solid $light
+      border-right: 2px solid $light
+  &__produts
+    display: flex
+    flex-wrap: wrap
+.double-border-button 
+  text-decoration: none
+  display: inline-block
+  margin: 10px 20px
+  padding: 10px 30px
+  position: relative
+  border: 2px solid $dark
+  color: $dark
+  font-family: 'Montserrat', sans-serif
+  transition: .4s
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    margin: auto
+    border: 2px solid rgba(0, 0, 0, 0)
+    transition: .4s
+.double-border-button:hover:after
+  border-color: $dark
+  width: calc(100% - 10px)
+  height: calc(100% + 10px)
+.product
+  &__img
+    width: 600px
+    margin-right: 4rem
+    margin-bottom: 2rem
+  &__item
+    display: flex
+  &__name
+    color: $light
+    font-size: 1.4rem
+  &-teg
+    color: $grey
+    font-size: 1.2rem
+    letter-spacing: 2px
+  &__iter
+    margin-top: -0.1rem
+    color: $light
+    font-size: 1.4rem
+.button-product
+  cursor: pointer
+  text-decoration: none
+  display: inline-block
+  background-color: transparent
+  margin: 10px 20px
+  padding: 15px 40px
+  position: relative
+  border: 2px solid $light
+  color: $light
+  font-family: 'Montserrat', sans-serif
+  transition: .4s
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    margin: auto
+    border: 2px solid rgba(0, 0, 0, 0)
+    transition: .4s
+.button-product:hover:after
+  border-color: $light
+  width: calc(100% - 10px)
+  height: calc(100% + 10px)

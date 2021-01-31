@@ -1,7 +1,6 @@
-.widget
+.widget 
   padding: 20px 30px
-  font-family: 'Roboto', sans-serif
-  &-title
+  &__title
     text-transform: uppercase
     letter-spacing: 2px
     color: $light
@@ -9,54 +8,23 @@
     padding-left: 15px
     margin-bottom: 15px
     border-left: 2px solid $light
-  &-list
-    padding: 0
-    list-style: none
-  &-link
-    text-decoration: none
-    outline: none
-    display: block
-    padding: 6px 0 
-    letter-spacing: 1px
-    font-weight: bold
-    color: $light
-    transition: .3s linear
-    &:hover
-      color: $primary
-    &::before
-      content: "\2014"
-      margin-right: 14px
-  &-items
-    position: relative
-    &:hover
-      visibility: visible
-      opacity: 1
-  &-link
-    position: relative
-  &-sublink
-    font-family: 'Libre Baskerville', serif
-    font-size: 11px
-    letter-spacing: 1px
-    padding: 5px 10px
-    transition: .3s linear
-    &:hover
-      background: #e8e8e8
-.submenu
-  position: absolute
-  z-index: 4
-  left: 50%
-  top: 100%
-  width: 150px
-  padding: 15px 0 15px
-  margin-top: 5px
-  background: white
-  border-radius: 5px
-  box-shadow: 0 0 30px rgba(0,0,0,.2)
-  box-sizing: border-box
-  visibility: hidden
-  opacity: 0
-  transform: translate(-50%, 20px)
-  transition: .3s
+.header__menu
+  display: block
+  padding: 0
+  list-style: none
+  margin-left: 10px
+.header__item
+.menu__item
+  text-decoration: none
+  outline: none
+  display: block
+  padding: 6px 0
+  letter-spacing: 1px
+  font-size: 1.3rem
+  color: $light
+  transition: .3s linear
   &:hover
-    visibility: visible
-    opacity: 1
+    color: $grey
+  &::before
+    content: "\2014"
+    margin-right: 14px

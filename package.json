@@ -28,6 +28,7 @@
     "browser-sync": "^2.26.12",
     "gulp-htmlmin": "^5.0.1",
     "gulp-tinypng-compress": "^1.2.5",
-    "jslint": "^0.12.1"
+    "jslint": "^0.12.1",
+    "swiper": "^6.3.5"
   }
 }
